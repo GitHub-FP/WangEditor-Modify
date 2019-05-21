@@ -5,26 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-   
      <script src="jQColorPicker/jquery-2.2.3.min.js"></script>
      <script src="jQColorPicker/colpick.js"></script>
      <script src="jQColorPicker/plugin.js"></script>
      <script src="wangEditor.js"></script>
     <link rel="stylesheet" href="jQColorPicker/colpick.css" type="text/css" />
-
-    
 </head>
 <body>
     <div id="div1">
         <p>欢迎使用 wangEditor 富文本编辑器</p>
     </div>
-
     <div id="picker"></div>
     <script type="text/javascript">
         var E = window.wangEditor
         var editor = new E('#div1')
         editor.create()
-
         $('#picker').colpick({
             flat:true,
             layout:'hex',
@@ -32,12 +27,7 @@
             onChange:function(hsb,hex,rgb,el){
                 // alert(hex);
             }
-        });
-        
+        }); 
     </script>
-   
-
-   
-   
 </body>
 </html>
